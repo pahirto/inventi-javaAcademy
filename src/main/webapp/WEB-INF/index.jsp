@@ -11,7 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-    <br><a href="OsobaList.jsp">OsobaList</a>
-    <br><a href="OsobaDetail.jsp">OsobaDetail</a>
+    <h1>Menu</h1>
+    <ul>
+        <li><a href="OsobaListServlet">OsobaList</a></li>
+        <li><a href="osobaDetailServlet">OsobaDetail</a></li>
+    </ul>
 </body>
 </html>
