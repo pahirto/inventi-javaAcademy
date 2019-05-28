@@ -6,13 +6,6 @@
 		<title>Detail osoby</title>
 	</head>
 	<body>
-		<h1>Detail osoby</h1>
-		<form action="osobaDetailServlet" method="post">
-			Id: <input type="text" name="id" value="${osoba.id}" readonly><br>
-			Jméno: <input type="text" name="firstName" value="${osoba.firstName}"><br>
-			Pøíjmení: <input type="text" name="surname" value="${osoba.surname}"><br>
-			<input type="submit">
-		</form>
-		<a href="OsobaListServlet">Zpìt</a>
+		<h1>Todo implement person detail</h1>
 	</body>
 </html>

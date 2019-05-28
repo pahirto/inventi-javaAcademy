@@ -7,19 +7,6 @@
 		<title>Seznam osob</title>
 	</head>
 	<body>
-		<h1>Seznam osob</h1>
-		<a href="osobaDetailServlet">Pøidat osobu</a>
-		<table border="1">
-			<tr><th>Id</th><th>Pøíjmení</th><th>Jméno</th><th>Detail</th><th>Smazat</th></tr>
-			<c:forEach var="osoba" items="${requestScope.osoby}">
-				<tr>
-					<td>${osoba.id}</td>
-					<td>${osoba.surname}</td>
-					<td>${osoba.firstName}</td>
-					<td><a href="osobaDetailServlet?id=${osoba.id}">Detail</a></td>
-					<td><a href="OsobaListServlet?deleteId=${osoba.id}">Smazat</a></td>
-				</tr>
-			</c:forEach>
-		</table>
+		<h1>Todo implement person list</h1>
 	</body>
 </html>

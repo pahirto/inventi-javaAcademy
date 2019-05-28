@@ -17,30 +17,12 @@ import academy.service.impl.OsobaServiceImpl;
  */
 @WebServlet("/OsobaListServlet")
 public class OsobaListServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String deleteId = request.getParameter("deleteId");
-		List<OsobaBean> osoby;
-		if(deleteId != null) {
-    		try {
-    			OsobaServiceImpl.getInstance().deleteOsoba(Long.valueOf(deleteId));
-    		} catch(NumberFormatException exception) {
-    		}
-    	}
-		osoby = OsobaServiceImpl.getInstance().getOsobaList();
-		request.setAttribute("osoby", osoby);
 		getServletContext().getRequestDispatcher("/WEB-INF/OsobaList.jsp").forward(request, response);
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 	}
 
 }
