@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.example.org/Osoba"
+		xmlns:tns="http://www.example.org/Osoba"
+		elementFormDefault="qualified">
+		
+	<element name="Osoba" type="tns:OsobaCom"/>
+		
+	<complexType name="OsobaCom">
+		<sequence>
+			<element name="id" type="tns:IdSim"/>
+			<element name="name" type="tns:NameSim"/>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="IdSim">
+		<restriction base="int"/>
+	</simpleType>
+	
+	<simpleType name="NameSim">
+		<restriction base="string"/>
+	</simpleType>
+</schema>
